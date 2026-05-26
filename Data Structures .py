@@ -1,0 +1,11 @@
+fruits=["Apple","Mango","Strawberry","Watermelon",]
+print(fruits)
+print(fruits[-1])
+fruits.append("Grapes")
+print(fruits)
+fruits.remove("Apple")
+print(fruits)
+fruits.sort()
+print(fruits)
+fruits.reverse()
+print()
