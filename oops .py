@@ -17,3 +17,22 @@ class Animal:
 Fox=Animal()
 Fox.details()
 Fox.myage()
+
+class Animal:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def details(self):
+        print("i am a",self.name)
+    def myage(self):
+        print("my age is",self.age)
+Parrot=Animal("blue",1)
+Parrot.details()
+Parrot.myage()
+Tiger=Animal("kurama",31)
+Tiger.details()
+Tiger.myage()
+Lion=Animal("son Goku",35)
+Lion.details()
+Lion.myage()
+
