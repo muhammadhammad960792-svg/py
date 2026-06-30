@@ -1,7 +1,16 @@
-print("helleo world")
-print(9+2)
-print("subtraction of 8-2",8-2)
-#hello how areyou.
-import keyword
-print(keyword.kwlist)
-print("hi /n")
+n=int(input("enter number :"))
+
+f=open("class_notes.txt",'r')
+
+print(f.read(n))
+f.close()
+
+print()
+
+file =open("Class_notes.txt","r")
+lines =file.readlines()
+file.close()
+print("Total lines:",len(lines))
+for i in range(len(lines)):
+    print(i + 1, "->",lines[i].strip())
+
