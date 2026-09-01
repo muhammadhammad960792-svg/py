@@ -1,0 +1,5 @@
+exp = int(input("Enter the exponent (try 6 or 3): "))
+print(" exponent",exp, "= binary", bin(exp)[2:])
+guess = input("What is 2^- +str(exp) +  ?" )
+input("Binary exponentiation reads bits od exponenets. Press Enter")
+print(" 2^", exp, " = ", 2**exp, "=", 2**exp," your guess:", guess)
