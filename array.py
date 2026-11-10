@@ -1,16 +1,13 @@
-def arrayMean(arr, arr_size): 
-    total_sum = 0
-    for i in range(0, arr_size):
-        total_sum += arr[i]
-    return float(total_sum/arr_size)
-def arrayMedian(arr, arr_size):
-        sorted(arr)
-        if arr_size % 2 !=1:
-                return float(arr[int(arr_size/2)])
-        return float(arr[int(arr_size-1)/2]) + arr[int(arr_size/2)]/2.0
-arr = [1,4,5,2,5,8,5,2,6,8]
-arr_size = len(arr)
-print("Mean =", arrayMean(arr, arr_size))
-print("Median =", arrayMedian(arr, arr_size))
-
-
+def reverse(n):
+    arr, i , j = list(range(1,n+1)),0,n-1
+    while i < j:
+        arr[i], arr[j] = arr[j],arr[i]
+        i+= 1; j-= 1
+    return arr
+input("reverse(n) builds [1...n] and flips it end-to-end wsing two printers.Press Enter")
+print(" reverse (4) =" ,reverse(4))
+print(" reverse (5) =", reverse(5))
+n = int(input("Enter list size (try 6 or 7):"))
+guess = input("What is reverse(" + str(n) +")? ")
+input("left and rught swap and move inward wntil they meet in the middle. Press Enter")
+print("reverse(" + str(n) + ") =", reverse(n), " your guess:", guess)
